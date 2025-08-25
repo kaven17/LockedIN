@@ -3,6 +3,7 @@
 import Hero from "@/components/Hero";
 import ThreatDashboard from "@/components/ThreatDashboard";
 import URLAnalyzer from "@/components/URLAnalyzer";
+import FeatureShowcase from "@/components/FeatureShowcase";
 import ExtensionPreview from "@/components/ExtensionPreview";
 import APIPreview from "@/components/APIPreview";
 
@@ -12,6 +13,7 @@ const Index = () => {
       <Hero />
       <ThreatDashboard />
       <URLAnalyzer />
+      <FeatureShowcase />
       <ExtensionPreview />
       <APIPreview />
     </div>
