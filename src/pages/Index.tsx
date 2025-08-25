@@ -1,7 +1,6 @@
 // Update this page (the content is just a fallback if you fail to update the page)
 
 import Hero from "@/components/Hero";
-import ThreatDashboard from "@/components/ThreatDashboard";
 import URLAnalyzer from "@/components/URLAnalyzer";
 import FeatureShowcase from "@/components/FeatureShowcase";
 import ExtensionPreview from "@/components/ExtensionPreview";
@@ -11,7 +10,6 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Hero />
-      <ThreatDashboard />
       <URLAnalyzer />
       <FeatureShowcase />
       <ExtensionPreview />
