@@ -2,39 +2,67 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* AI Phishing Blocker Design System - Security-focused with cyber aesthetics */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Core cyber security palette */
+    --background: 220 27% 4%;
+    --foreground: 210 40% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 220 27% 6%;
+    --card-foreground: 210 40% 98%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 220 27% 6%;
+    --popover-foreground: 210 40% 98%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary: Deep security blue */
+    --primary: 217 91% 50%;
+    --primary-foreground: 220 27% 4%;
+    --primary-glow: 217 91% 60%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary: Muted cyber gray */
+    --secondary: 215 25% 15%;
+    --secondary-foreground: 210 40% 98%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 215 25% 12%;
+    --muted-foreground: 217 10% 64%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Accent: Cyber green for safe states */
+    --accent: 142 76% 36%;
+    --accent-foreground: 220 27% 4%;
+    --accent-glow: 142 76% 50%;
 
-    --destructive: 0 84.2% 60.2%;
+    /* Threat levels */
+    --safe: 142 76% 36%;
+    --safe-foreground: 220 27% 4%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 220 27% 4%;
+    --danger: 0 84% 60%;
+    --danger-foreground: 210 40% 98%;
+
+    --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 215 25% 20%;
+    --input: 215 25% 15%;
+    --ring: 217 91% 50%;
+
+    /* Cyber gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-cyber: linear-gradient(135deg, hsl(217 91% 15%), hsl(217 91% 35%));
+    --gradient-threat: linear-gradient(135deg, hsl(0 84% 30%), hsl(0 84% 60%));
+    --gradient-safe: linear-gradient(135deg, hsl(142 76% 20%), hsl(142 76% 50%));
+    
+    /* Cyber shadows and glows */
+    --shadow-cyber: 0 0 30px hsl(var(--primary) / 0.3);
+    --shadow-threat: 0 0 30px hsl(var(--danger) / 0.4);
+    --shadow-safe: 0 0 30px hsl(var(--safe) / 0.3);
+    --glow-pulse: 0 0 20px hsl(var(--primary-glow) / 0.6);
+
+    /* Animation variables */
+    --transition-cyber: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --pulse-duration: 2s;
 
     --radius: 0.5rem;
 
